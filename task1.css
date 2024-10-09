@@ -1,0 +1,86 @@
+/*1) Selects all elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*2) Selects all elements with class="main" */
+.main{
+    background-color: brown;
+}
+/* 3)Selects the element with id="firstname" */
+#firstname{
+    color: aqua;
+}
+/* 4)Selects all <span> elements */
+span{
+    color: chartreuse;
+}
+/* 5)Selects all <p> elements with class="intro" */
+p.intro{
+    background-color: blue;
+    width: 200px;
+}
+/* 6)Selects all <div> elements and all <p> elements */
+div, p{
+    text-transform: uppercase;
+}
+/* 7)Selects all <p> elements where the parent is a <div> element */
+div > p{
+    color: #ffaadd;
+}
+/* 8)The :visited selector style links to pages you have already visited: */
+a:visited {
+    color: pink;
+  }
+  /* 9)Select and style only if the value of the <input> element is valid: */
+  input:valid {
+    background-color: yellow;
+  }
+  /* 10)Selects all input elements with an invalid value */
+  input:invalid {
+    border: 2px solid red;
+    background-color: beige;
+  }
+  /* 11)Selects every <li> element that is the first child of its parent */
+  li:first-child{
+    background-color: blueviolet;
+  }
+  /* 12)Selects every <p> element that is the second child of its parent */
+  li:nth-child(3){
+    background-color: darkorange;
+  }
+  /* 13)changes single elements */
+  li:nth-child(odd){
+    background-color: red;
+  }
+  /* 14)changes even elements */
+  li:nth-child(even){
+    background-color: blueviolet;
+  }
+  /* 15)Selects links on mouse over */
+  a:hover {
+    background-color: yellow;
+    font-size: larger;
+  }
+  /* 16)Selects the input element which has focus */
+  input:focus{
+    background-color: brown;
+  }
+/* 17)Selects all visited links */
+a:visited{
+  color:aqua
+}
+/* 18)Insert a string before the content of each <p> element: */
+p::before {
+  content: "Read this: ";
+}
+/* 19)Insert a string after the content of each <p> element: */
+p::after {
+  content: " - Remember this";
+}
+/* 20)Select and style only if the <input> element has a "required" attribute: */
+input:required {
+  background-color: yellow;
+}
