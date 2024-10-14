@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type:  none;
+}
+p{
+background-color: black;
+
+height: 40px;
+color: green;
+position: sticky;
+top: 0;
+}
+div{
+height: 250px;
+position: relative;
+}
+body{
+    height: 200vh;
+}
