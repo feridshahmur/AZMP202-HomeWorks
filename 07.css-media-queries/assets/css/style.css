@@ -1,0 +1,197 @@
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    
+    color: rgb(247, 247, 247);
+    
+
+    
+}
+
+header{
+    
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+nav ul{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    
+}
+nav ul a{
+    color: rgb(247, 247, 247);
+}
+nav ul a:hover{
+    color: yellow;
+}
+.center{
+    padding: 250px 0 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.center p{
+    color: #fff;
+    font-size: 3rem;
+
+}
+.center h1{
+    color: #fff;
+    font-size: 5rem;
+}
+.center button{
+    color: #fff;
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    margin-top: 2rem;
+    background-color: #FFC800;
+    font-size: 1.5rem;
+    
+}
+.center button:hover{
+    background-color: #ffc800c7;
+}
+.services-title{
+    padding-top: 2rem;
+    font-size: 3.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+.lorem{
+    font-size: 1.1rem;
+    text-align: center;
+    font-style:italic;
+    padding-bottom: 3rem;
+}
+.cards {
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+.col-4{
+    text-align: center;
+}
+.col-4 h1{
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.col-4 p {
+    color: lightgray;
+    text-align: center;
+    font-size: 20px;
+}
+ .icon .fa-solid{
+
+    background-color: orange;
+    padding: 30px;
+    border-radius: 50%;
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+}
+#portfolio{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    margin: 5rem auto;
+}
+.image{
+    width: 400px;
+    height: 300px;
+
+}
+.image img{
+    width: 80%;
+    height: 90%;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.portfolio-info {
+ background-color: #fff;
+ width: 80%;
+}
+.image p{
+    color: #bbb;
+}
+.col-12{
+    text-align: center;
+}
+.col-12 h1{
+    font-size: 3rem;
+}
+.col-12 p{
+    font-size: 20px;
+}
+header .menu {
+    display: none;
+}
+.links .row .col-3 a{
+    color: #bbb;
+    font-size: 2.5rem;
+}
+.links .row .col-3 a i{
+    font-size: 1.8rem;
+}
+.links .row .col-3{
+    padding: 0 0 50px;
+}
+.infos  .col-4 .icons i{
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+   
+}
+.col-4 .links-small a{
+    color: #bbb;
+}
+
+  @media only screen and (max-width: 767px) {
+    header .menu {
+      display: block;
+    }
+    header .menu .fa-bars {
+      color: #fff;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    button{
+        cursor: pointer;
+        margin-right: 10px;
+    }
+  
+    header nav ul {
+      display: none;
+    }
+    .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image {
+        margin: auto;
+    }
+    .links .row .col-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+ 
