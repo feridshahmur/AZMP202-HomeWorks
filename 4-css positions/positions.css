@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-
 }
 body{
     height: 200vh;
@@ -22,16 +20,12 @@ position: relative;
 .parent .child{
 width: 70px;
 height: 68px;
-
-
-
 }
 .parent .childa{
     background-color: red;
     position: absolute;
 top: 20px;
 left: 20px;
-
 }
 .parent .childb{
     background-color: rgb(142, 136, 136) ;
@@ -41,22 +35,18 @@ left: 20px;
     top: 45px;
     left: 50px;
     z-index: 1;
-    
-    
 }
 .parent .childc{
     background-color: yellow;
     position: absolute;
-top: 60px;
+    top: 60px;
 left: 80px;
-
 }
 .parent .childd{
     background-color: orangered;
     position: absolute;
 top: 0;
 right:0 ;
-
 }
 .parent .childe{
     background-color: green;
@@ -65,8 +55,7 @@ bottom: 60px;
 right: 125px ;
 
 }
-
- .childf{
+.childf{
     background-color: red;
     position: fixed;
     top: 300px;

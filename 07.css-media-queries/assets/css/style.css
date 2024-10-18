@@ -162,10 +162,64 @@ header .menu {
 .col-4 .links-small a{
     color: #bbb;
 }
+.team-members h1{
+    text-align: center;
+    font-size: 3rem;
+}
+.team-members p{
+font-size: 1rem;
+text-align: center;
+padding-top: 1.5rem;
+
+}
+.imag{
+    background-color: gray;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.imag img{
+    width: 98%;
+    height: 98%;
+    
+    border-radius: 50%;
+}
+.infoes h3{
+    font-size: 1.8rem;
+    padding-top: 20px;
+    padding-bottom: 8px;
+
+}
+
+.infoes p{
+    color: black;
+    padding-bottom: 1rem;
+}
+.section-two{
+    padding: 150px 0;
+}
+.infoes .icons i{
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.imag{
+    margin: auto;
+}
+
 
   @media only screen and (max-width: 767px) {
     header .menu {
       display: block;
+    }
+    header .center h1{
+        font-size: 5rem;
+    }
+    header .center p{
+        font-size: 2rem;
     }
     header .menu .fa-bars {
       color: #fff;
@@ -192,6 +246,14 @@ header .menu {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .team-members .{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .team-members h1{
+        font-size: 2.5rem;
     }
   }
  
