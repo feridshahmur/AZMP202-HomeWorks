@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ .icons .head-icons i{
+    color: rgb(214, 214, 212);
+    padding-right: 1rem;
+}
+ .but{
+    width: 95px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+ }
+ .b2{
+    background-color: gold;
+    color: #fff;
+    transition: all 1s;
+ }
+ .b2:hover{
+    background-color: #fff;
+    border: 1px solid gold;
+    color: black;
+   
+ }
+ .head{
+    border-bottom: 1px solid gray;
+    padding-top: 10px;
+ }
+ .icons{
+    display: flex;
+    justify-content: space-between;
+ }
+ .buttons-header{
+    padding-bottom: 10px;
+ }
+ .header-navbar{
+   padding: 25px 0;
+   background-color: #fff;
+   
+
+   
+ }
+ .header-navbar .navbar{
+  
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+   top:100px ;
+   left: 0;
+ }
+ .link-navbar ul{
+   display: flex;
+   gap: 3rem;
+   
+ }
+
+
+ .link-navbar ul li a{
+   color: black;
+   font-size: 16px;
+   
+ }
+ .link-navbar ul li a:hover{
+   color: gold;
+ }
+ .link-navbar ul li a i{
+   color: black;
+ }
+.bgc-imaj{
+   background-image: url(../images/home-banner.jpg);
+   height: 700px;
+   background-repeat:no-repeat ;
+   background-position: center center;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   background-attachment: fixed;
+}
+.bgc-imaj h3{
+    font-size: 60px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #fff;
+    
+}
+.bgc-imaj h3 span{
+   background: #fab700;
+   border-radius: 4px;
+   line-height: 60px;
+   color: #222222;
+   padding-left: 4px;
+   padding-right: 4px;
+   padding-bottom: 5px;
+   padding-top: 2px;
+   display: inline-block;}
+.bgc-imaj p{
+   color: #fff;
+   text-align: center;
+   line-height: 24px;
+   font-size: 17px;
+}
+.btn .image-section{
+   width: 160px;
+   height: 50px;
+   border-radius: 10px;
+   cursor: pointer;
+   color: goldenrod;
+   background-color: black;
+   transition: all 0.5s;
+   
+   
+}
+.btn{
+   padding-top: 2rem;
+}
+.btn .image-section:hover{
+   color: black;
+   background-color: goldenrod;
+}
+#services{
+   padding: 5rem 0 10rem 0;
+   font-family: "Oswald", sans-serif;
+   
+}
+.services h2{
+font-size: 36px;
+text-align: center;
+}
+.services p{
+   text-align: center;
+}
+.services-cards h2{
+   padding: 2rem 0;
+}
+.services-cards{
+   padding-top: 4rem;
+  
+}
+
+.services-cards .row {
+  
+   display: flex;
+}
+.cards{
+   display: flex;
+   flex-direction: row;
+}
+ 
+
+.c1:hover {
+   cursor: pointer;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.c2:hover {
+   cursor: pointer;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.c3:hover {
+   cursor: pointer;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.pro{
+   text-align: center;
+   font-size: 2rem;
+   font-family: Oswald, sans-serif;
+   font-weight: bolder;
+   line-height: 43px;
+}
+.pr{
+   text-align: center;
+   color: rgb(119, 119, 119)
+   ;
+   padding-bottom: 3rem
+   ;
+}
+
+.ima{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+.ima img{
+   width: 100%;
+   height: 100%;
+}
+.crd{
+padding: 0;
+}
+.image-hover{
+   padding: 0;
+   position: relative;
+}
+.row{
+   position: relative;
+}
+.crd .overlay {
+   position: absolute;
+   bottom: 0;
+   top: 0;
+   left: 0;
+   right: 0;
+   padding: 0;
+  
+   width: 100%;
+   /* width: 100%; */
+   height: 100%;
+   /* height: 0%; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   opacity: 0;
+   background-color: rgb(215, 161, 24,0.9);
+   cursor: pointer;
+
+   transition: all 0.3s;
+ }
+ .crd  :hover .overlay {
+   
+   padding: 0;
+   opacity: 1;
+   height: 100%;
+   z-index: 1;
+   /* transform: translateY(-1%); */
+   text-align: center;   
+   
+ }
+.mem{
+   font-size: 36px;
+   font-weight: 500 ;
+   font-family: Oswald, sans-serif;
+   text-align: center;
+   padding: 6rem 0 1rem 0;
+
+}
+.memb{
+   color: rgb(34, 34, 34);
+   text-align: center;
+   padding-bottom: 6rem;
+}
+.members{
+   padding-bottom: 20px;
+}
+.overlay i{
+   display: flex;
+   gap: 1rem;
+}
+ .pic img .overlay {
+   position: absolute;
+   bottom: 0;
+   top: 0;
+   left: 0;
+   right: 0;
+   padding: 0;
+  
+   width: 100%;
+   /* width: 100%; */
+   height: 100%;
+   /* height: 0%; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   gap: 2rem;
+   color: #222222;
+   opacity: 0;
+   background-color: rgb(215, 161, 24,0.9);
+   cursor: pointer;
+
+   transition: all 0.3s;
+ }
+ .pic:hover .overlay{
+   opacity: 1;
+   height: 99%;
+   z-index: 1;
+   /* transform: translateY(-1%); */
+   text-align: center;  
+   flex-direction: row;
+ }
+ .mem-info{
+   padding: 1rem 0 6rem 0;
+   text-align: center;
+ }
