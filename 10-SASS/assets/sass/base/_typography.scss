@@ -1,41 +1,42 @@
-$font-familiy:  "Epilogue", sans-serif;
-h1{
-    font-size:72px ;
-    font-weight: 800;
-    color:#fff ;
-    line-height:80px ;
-    font-family: $font-familiy;
-    letter-spacing: -2px;
+$font-familiy: "Epilogue", sans-serif;
+h1 {
+  font-size: 72px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 80px;
+  font-family: $font-familiy;
+  letter-spacing: -2px;
+  @include for-phone-only {
+    font-size: 50px;
+  }
 }
-h2{
-    font-size:56px ;
-    font-weight: 800;
-    color:#fff ;
-    line-height:64px ;
-    font-family: $font-familiy;
-    letter-spacing: -1px;
+h2 {
+  font-size: 56px;
+  font-weight: 600;
+  // color:#fff ;
+  line-height: 64px;
+  font-family: $font-familiy;
+  letter-spacing: -1px;
 }
-h3{
-    font-size:40px ;
-    font-weight: 800;
-    color:#fff ;
-    line-height:48px ;
-    font-family: $font-familiy;
-    
+h3 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 48px;
+  font-family: $font-familiy;
 }
-h4{
-    font-size:24px ;
-    font-weight: 700;
-    color:#fff ;
-    line-height:32px ;
-    font-family: $font-familiy;
-    
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 32px;
+  font-family: $font-familiy;
 }
-h5{
-    font-size:16px ;
-    font-weight: 400;
-    color:#EF6D58 ;
-    line-height:32px ;
-    font-family: $font-familiy;
-    letter-spacing: 3px;
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ef6d58;
+  line-height: 32px;
+  font-family: $font-familiy;
+  letter-spacing: 3px;
 }

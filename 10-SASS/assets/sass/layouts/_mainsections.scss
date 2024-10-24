@@ -1,134 +1,230 @@
-#page{
-    #banner{
-        background-color: rgb(40, 41, 61);
-        .hero-banner{
-            @include flexBox(space-between,center);
-            @include for-phone-only{
-                display: flex;
-                flex-direction: column-reverse;
-            }
-            .hero-banner-content{
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                position: relative;
-                max-width: 513px;
-                h1{
-                    position: relative;
-                    z-index: 1;
-                }
-                .star{
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                }
-                p{
-                    color: #FFFFFFA3;
-                }
-                span{
-                    color: #fff;
-                    padding-top: 1.2rem;
-                }
-                .fedback{
-                    display: flex;
-                    gap: 1.5rem;
-                    div{
-                        display: flex;
-                        flex-direction: column;
-                    }
-                }
-                .banner-btns{
-                    padding-right: 1.2rem;
-                    .work{
-                        @extend %primary-button;
-                        width: 154px;
-     
-                     }
-                     .contactus{
-                         @extend %primary-button;
-                         background-color: transparent;
-                         border: 1px solid;
-                         max-width: 154px;
-                         
-                     }
-     
-                }
-                
-                
-            }
-            .hero-banner-imaj{
-                padding-top: 60px;
-                width : 100%px;
-                
-                img{
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            
+#page {
+  #banner {
+    background-color: rgb(40, 41, 61);
+    .hero-banner {
+      @include flexBox(space-between, center);
+      @include for-phone-only {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .hero-banner-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        position: relative;
+        max-width: 513px;
+        h1 {
+          position: relative;
+          z-index: 1;
         }
-    }
-}
-#partners{
-    background-color: rgb(252, 239, 232);
-    
-    .partners{
-        height: 180px;
-        border-bottom: 1px solid #391400;
-        @include flexBox(space-between,center);
-        gap: 1rem;
-        @include for-phone-only{
+        .star {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+        p {
+          color: #ffffffa3;
+        }
+        span {
+          color: #fff;
+          padding-top: 1.2rem;
+        }
+        .fedback {
+          display: flex;
+          gap: 1.5rem;
+          padding-bottom: 2rem;
+          div {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+          }
         }
-    }
-}
-#agancy{
-    background-color: rgb(252, 239, 232);
-    .agancy{
-        @include flexBox(space-between,center);
-        
-        @include for-phone-only{
+        .banner-btns {
+          padding-right: 1.2rem;
+          @include for-phone-only {
             display: flex;
-            flex-wrap: wrap;
-        }
-        
-        .agancy-info{
-            
-            h1{
-                color: #391400;
-                padding: 1.5rem 0;
-                
-
-            }
-            p.first{
-                font-size: 20px;
-                color: #391400;
-                padding: 1.5rem 0;
-            }
-            p.second{
-                font-size: 14px;
-                color: #391400;
-                padding-bottom: 1.5rem;
-            }
-        }
-        .agancy-pic{
-         max-width:  566px;
-         height: 585px;
-        }
-        &img{
-            width: 100%;
-            height: 100%;
-        }
-        .about-us{
+            gap: 1rem;
+          }
+          .work {
             @extend %primary-button;
-            background-color:#fff;
-            color: #391400;
-             font-weight: 600;
-             
-
-            
+            width: 154px;
+          }
+          .contactus {
+            @extend %primary-button;
+            background-color: transparent;
+            border: 1px solid;
+            max-width: 154px;
+          }
         }
-    }
-}
+      }
+      .hero-banner-imaj {
+        padding-top: 60px;
+        width: 100%px;
 
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+#partners {
+  background-color: rgb(252, 239, 232);
+
+  .partners {
+    height: 180px;
+    border-bottom: 1px solid #391400;
+    @include flexBox(space-between, center);
+    gap: 1rem;
+    @include for-phone-only {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+#agancy {
+  background-color: rgb(252, 239, 232);
+  .agancy {
+    @include flexBox(space-around, center);
+
+    @include for-phone-only {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .agancy-info {
+      @include for-phone-only {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+      }
+      h2 {
+        font-size: 56px;
+        color: #391400;
+        padding: 1.5rem 0;
+        @include for-phone-only {
+          font-size: 40px;
+        }
+      }
+      p.first {
+        font-size: 20px;
+        color: #391400;
+        padding: 1.5rem 0;
+      }
+      p.second {
+        font-size: 14px;
+        color: #391400;
+        padding-bottom: 1.5rem;
+      }
+    }
+    .agancy-pic {
+      //  max-width:  566px;
+      //  height: 585px;
+      @include for-phone-only {
+      }
+    }
+    &img {
+      width: 80%;
+      height: 80%;
+    }
+    .about-us {
+      @extend %primary-button;
+      background-color: #fff;
+      color: #391400;
+      font-weight: 600;
+    }
+  }
+}
+footer {
+  background-color: rgb(252, 239, 232);
+  padding: 4rem 0;
+
+  .footer {
+    @include flexBox(space-around, center);
+    background-color: #ef6d58;
+    @include for-phone-only {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      align-items: flex-start;
+      padding: 0;
+    }
+
+    .footer-info {
+      p {
+        color: #ffffffa3;
+        font-size: 16px;
+        width: 450px;
+        padding-left: 5%;
+        @include for-phone-only {
+          width: 273px;
+          padding: 0;
+        }
+      }
+      h2 {
+        font-weight: 800px;
+        color: #fff;
+        font-size: 50px;
+        width: 400px;
+        padding-left: 5%;
+        padding-bottom: 1.5rem;
+        @include for-phone-only {
+          width: 274px;
+          padding: 0;
+        }
+      }
+      .fb {
+        padding-left: 5%;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        @include for-phone-only {
+          text-align: left;
+          padding: 1.5rem 0 1.5rem 0;
+        }
+
+        .footer-button {
+          @extend %primary-button;
+          border: 1px solid #39140014;
+          background-color: #fff;
+          color: #000;
+          font-weight: bold;
+        }
+      }
+    }
+    .footer-pic {
+      padding-right: 5%;
+      @include for-phone-only {
+      }
+      &pic {
+        @include for-phone-only {
+        }
+      }
+    }
+  }
+  #contact {
+    padding-top: 5rem;
+    .cont {
+      @include flexBox(space-between, center);
+      @include for-phone-only {
+        display: flex;
+        flex-direction: column;
+        // flex-wrap:;
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}
+#tabs {
+  @include flexBox(center, center);
+  padding: 2rem 0;
+}
+#pictures {
+  // .row{
+  //     display: flex;
+  //     flex-wrap: wrap;
+  // }
+  .p:hover {
+    transform: scale(1.01);
+  }
+}
