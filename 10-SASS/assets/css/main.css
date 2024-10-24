@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 80px;
+  font-family: "Epilogue", sans-serif;
+  letter-spacing: -2px;
+}
+
+h2 {
+  font-size: 56px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 64px;
+  font-family: "Epilogue", sans-serif;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 48px;
+  font-family: "Epilogue", sans-serif;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 32px;
+  font-family: "Epilogue", sans-serif;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #EF6D58;
+  line-height: 32px;
+  font-family: "Epilogue", sans-serif;
+  letter-spacing: 3px;
+}
+
+#agancy .agancy .about-us, #page #banner .hero-banner .hero-banner-content .banner-btns .contactus, #page #banner .hero-banner .hero-banner-content .banner-btns .work, header .head .hbtn .contact {
+  width: 170px;
+  height: 48px;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(240, 109, 89);
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col-1 {
+  width: 8.3333333333%;
+  padding: 1rem;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+  padding: 1rem;
+}
+
+.col-3 {
+  width: 25%;
+  padding: 1rem;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+  padding: 1rem 0;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+  padding: 1rem;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 1rem 0;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+  padding: 1rem;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+  padding: 1rem;
+}
+
+.col-9 {
+  width: 75%;
+  padding: 1rem;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+  padding: 1rem;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+  padding: 1rem;
+}
+
+.col-12 {
+  width: 100%;
+  padding: 1rem;
+}
+
+.p-left-0 {
+  padding-left: 0;
+}
+
+/* .box {
+  background-color: orange;
+  border: 2px solid;
+} */
+header {
+  background-color: rgb(40, 41, 61);
+}
+header .head {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  header .head nav {
+    display: none;
+  }
+}
+header .head nav ul {
+  display: flex;
+  gap: 1.5rem;
+  font-family: "Epilogue", sans-serif;
+}
+header .head nav ul li a {
+  color: #fff;
+}
+header .head .menu {
+  display: none;
+}
+@media (max-width: 767px) {
+  header .head .menu {
+    display: block;
+  }
+}
+header .head .hbtn .contact {
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid;
+  width: 138px;
+}
+@media (max-width: 767px) {
+  header .head .hbtn .contact {
+    display: none;
+  }
+}
+
+#page #banner {
+  background-color: rgb(40, 41, 61);
+}
+#page #banner .hero-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  #page #banner .hero-banner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+#page #banner .hero-banner .hero-banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  max-width: 513px;
+}
+#page #banner .hero-banner .hero-banner-content h1 {
+  position: relative;
+  z-index: 1;
+}
+#page #banner .hero-banner .hero-banner-content .star {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#page #banner .hero-banner .hero-banner-content p {
+  color: rgba(255, 255, 255, 0.6392156863);
+}
+#page #banner .hero-banner .hero-banner-content span {
+  color: #fff;
+  padding-top: 1.2rem;
+}
+#page #banner .hero-banner .hero-banner-content .fedback {
+  display: flex;
+  gap: 1.5rem;
+}
+#page #banner .hero-banner .hero-banner-content .fedback div {
+  display: flex;
+  flex-direction: column;
+}
+#page #banner .hero-banner .hero-banner-content .banner-btns {
+  padding-right: 1.2rem;
+}
+#page #banner .hero-banner .hero-banner-content .banner-btns .work {
+  width: 154px;
+}
+#page #banner .hero-banner .hero-banner-content .banner-btns .contactus {
+  background-color: transparent;
+  border: 1px solid;
+  max-width: 154px;
+}
+#page #banner .hero-banner .hero-banner-imaj {
+  padding-top: 60px;
+  width: 100% px;
+}
+#page #banner .hero-banner .hero-banner-imaj img {
+  width: 100%;
+  height: 100%;
+}
+
+#partners {
+  background-color: rgb(252, 239, 232);
+}
+#partners .partners {
+  height: 180px;
+  border-bottom: 1px solid #391400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 767px) {
+  #partners .partners {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+#agancy {
+  background-color: rgb(252, 239, 232);
+}
+#agancy .agancy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  #agancy .agancy {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+#agancy .agancy .agancy-info h1 {
+  color: #391400;
+  padding: 1.5rem 0;
+}
+#agancy .agancy .agancy-info p.first {
+  font-size: 20px;
+  color: #391400;
+  padding: 1.5rem 0;
+}
+#agancy .agancy .agancy-info p.second {
+  font-size: 14px;
+  color: #391400;
+  padding-bottom: 1.5rem;
+}
+#agancy .agancy .agancy-pic {
+  max-width: 566px;
+  height: 585px;
+}
+#agancy .agancyimg {
+  width: 100%;
+  height: 100%;
+}
+#agancy .agancy .about-us {
+  background-color: #fff;
+  color: #391400;
+  font-weight: 600;
+}/*# sourceMappingURL=main.css.map */

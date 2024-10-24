@@ -1,0 +1,54 @@
+header{
+    background-color: rgb(40, 41, 61);
+    .head{
+        padding: 1.5rem 0;
+        
+       @include flexBox(space-between,center);
+        nav{ 
+           
+            @include for-phone-only{
+                display:none;
+            }
+            
+           
+            
+            ul{
+                display: flex;
+                gap: 1.5rem;
+
+               
+                font-family: $font-familiy;
+                
+                li{
+                    a{
+                        color: #fff;
+                    }
+                }
+               
+                
+            }
+            
+            
+        }
+        .menu{
+            display: none;
+            @include for-phone-only{
+                display:block;
+            }
+        }
+        .hbtn{
+            .contact{
+                @extend %primary-button;
+                background-color: transparent;
+                cursor: pointer;
+                border: 1px solid ;
+                width: 138px;
+                @include for-phone-only{
+                    display:none;
+                }
+                
+            }
+        }
+    }
+    }
+

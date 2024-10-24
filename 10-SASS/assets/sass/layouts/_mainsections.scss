@@ -1,0 +1,134 @@
+#page{
+    #banner{
+        background-color: rgb(40, 41, 61);
+        .hero-banner{
+            @include flexBox(space-between,center);
+            @include for-phone-only{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .hero-banner-content{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                position: relative;
+                max-width: 513px;
+                h1{
+                    position: relative;
+                    z-index: 1;
+                }
+                .star{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                p{
+                    color: #FFFFFFA3;
+                }
+                span{
+                    color: #fff;
+                    padding-top: 1.2rem;
+                }
+                .fedback{
+                    display: flex;
+                    gap: 1.5rem;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+                .banner-btns{
+                    padding-right: 1.2rem;
+                    .work{
+                        @extend %primary-button;
+                        width: 154px;
+     
+                     }
+                     .contactus{
+                         @extend %primary-button;
+                         background-color: transparent;
+                         border: 1px solid;
+                         max-width: 154px;
+                         
+                     }
+     
+                }
+                
+                
+            }
+            .hero-banner-imaj{
+                padding-top: 60px;
+                width : 100%px;
+                
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            
+        }
+    }
+}
+#partners{
+    background-color: rgb(252, 239, 232);
+    
+    .partners{
+        height: 180px;
+        border-bottom: 1px solid #391400;
+        @include flexBox(space-between,center);
+        gap: 1rem;
+        @include for-phone-only{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+#agancy{
+    background-color: rgb(252, 239, 232);
+    .agancy{
+        @include flexBox(space-between,center);
+        
+        @include for-phone-only{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .agancy-info{
+            
+            h1{
+                color: #391400;
+                padding: 1.5rem 0;
+                
+
+            }
+            p.first{
+                font-size: 20px;
+                color: #391400;
+                padding: 1.5rem 0;
+            }
+            p.second{
+                font-size: 14px;
+                color: #391400;
+                padding-bottom: 1.5rem;
+            }
+        }
+        .agancy-pic{
+         max-width:  566px;
+         height: 585px;
+        }
+        &img{
+            width: 100%;
+            height: 100%;
+        }
+        .about-us{
+            @extend %primary-button;
+            background-color:#fff;
+            color: #391400;
+             font-weight: 600;
+             
+
+            
+        }
+    }
+}
+
