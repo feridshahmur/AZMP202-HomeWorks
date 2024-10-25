@@ -70,10 +70,11 @@
 }
 #partners {
   background-color: rgb(252, 239, 232);
+  padding: 3rem 0;
 
   .partners {
     height: 180px;
-    border-bottom: 1px solid #391400;
+    border-top: 1px solid #9b4111;
     @include flexBox(space-between, center);
     gap: 1rem;
     @include for-phone-only {
@@ -227,4 +228,114 @@ footer {
   .p:hover {
     transform: scale(1.01);
   }
+}
+
+#blog1{
+  background-color:rgb(252, 239, 232);
+  padding:3rem 0 0 3rem ;
+  @include for-phone-only{
+  text-align: center;
+  }
+  .blogone{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #9b4111;
+    @include for-phone-only{
+     display: flex;
+     flex-direction:column ;
+    //  text-align: center;
+    align-items: center;
+    padding:  0 5%;
+    }
+    .blogone-inf{
+      .img{
+        width: 570px;
+        height: 336px;
+        overflow: hidden;
+        @include for-phone-only{
+          width:329px ;
+          height:224px ;
+          align-items: center;
+         
+        }
+        img{
+          width: 100%;
+          height: 100%;
+          transition: 0.5s all;
+          
+          &:hover{
+            overflow: hidden;
+            transform: scale(1.04);
+          }
+        }
+      }
+      h3{
+        color: #000;
+        width: 538px;
+        height: 99px;
+        @include for-phone-only{
+         width: 329px ;
+         font-size: 24px;
+        }
+        // padding: 2rem 0;
+      }
+      p{
+        font-size: 20px;
+        padding: 2rem 0;
+      }
+      p.date{
+        color: #391400A3;
+        padding: 3rem 0;
+      }
+    }
+  }
+  
+}
+#blog2{
+  background-color:rgb(252, 239, 232);
+  padding:3rem 0 0 3rem ;
+  .blogone{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #9b4111;
+   
+    .blogone-inf{
+      .img{
+        width: 370px;
+        height: 224px;
+        overflow: hidden;
+        border-radius: 6px;
+       
+        @include for-phone-only{
+          width:329px ;
+          height:224px ;
+        }
+        img{
+          width: 100%;
+          height: 100%;
+          transition: all 0.5s;
+          border-radius: 6px;
+          &:hover{
+            transform: scale(1.04);
+          }
+        }
+      }
+      h4{
+        color: #000;
+        width: 338px;
+        height: 68px;
+        // padding: 2rem 0;
+      }
+      p{
+        font-size: 20px;
+        padding: 2rem 0;
+      }
+      p.date{
+        color: #391400A3;
+        padding: 3rem 0;
+      }
+    }
+  }
+  
 }
